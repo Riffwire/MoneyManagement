@@ -1,5 +1,21 @@
+:root{
+
+    --DarkBlue:#0A2647;
+    --KindaDarkBlue:#144272;
+    --Blue:#205295;
+    --LessBlue:#2C74B3;
+
+}
 *,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.navbar{
+    width: 15%;
+    height: 100vh;
+    left: 0;
+    background-color: var(--DarkBlue);
+    
+
 }
