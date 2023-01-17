@@ -1,21 +1,56 @@
-:root{
+:root {
 
-    --DarkBlue:#0A2647;
-    --KindaDarkBlue:#144272;
-    --Blue:#205295;
-    --LessBlue:#2C74B3;
+    --DarkBlue: #0A2647;
+    --KindaDarkBlue: #144272;
+    --Blue: #205295;
+    --LessBlue: #2C74B3;
 
 }
-*,body{
+
+*,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.navbar{
-    width: 15%;
-    height: 100vh;
-    left: 0;
-    background-color: var(--DarkBlue);
-    
 
+.navbar {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--DarkBlue);
+    display: flex;
+}
+
+.logo-navbar-layer,
+.btn-navbar-layer,
+.account-navbar-layer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-navbar-layer img {
+    width: 20%;
+}
+
+.btn-navbar-layer {
+    justify-content: space-around;
+}
+
+.btn-navbar-layer a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.btn-navbar-layer a:hover {
+    transform:scale(1.1);
+    transition: all 500ms   ;
+}
+
+.account-navbar-layer i {
+    color: white;
 }
