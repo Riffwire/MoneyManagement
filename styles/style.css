@@ -13,13 +13,18 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    caret-color: transparent;
 }
-
+.container{
+    display: flex;
+}
 .navbar {
-    width: 100vw;
-    height: 15vh;
+    width: 15vw;
+    height: 100vh;
+    left: 0;
     background-color: var(--DarkBlue);
     display: flex;
+    flex-direction: column;
 }
 
 .logo-navbar-layer,
@@ -32,11 +37,12 @@ body {
 }
 
 .logo-navbar-layer img {
-    width: 20%;
+    width: 60%;
 }
 
 .btn-navbar-layer {
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .btn-navbar-layer a {
@@ -47,10 +53,40 @@ body {
 }
 
 .btn-navbar-layer a:hover {
-    transform:scale(1.1);
-    transition: all 500ms   ;
+    transition: all 500ms;
+    color: var(--LessBlue);
 }
 
-.account-navbar-layer i {
+.user-photo-navbar {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.user-photo-navbar img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-name-navbar {
     color: white;
+    font-size: 15px;
+    position: relative;
+}
+
+.user-status-navbar {
+    color: var(--LessBlue);
+    font-size: 15px;
+    position: relative;
+}
+
+.user-status-navbar::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: green; 
+    transform: translate(-0.7em,1em);
 }

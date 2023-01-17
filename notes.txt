@@ -1,0 +1,14 @@
+Home/DashBoard
+
+Transactions
+
+Goals
+
+Account
+
+Categories
+    -Shopping
+    -HealtCare
+    -Food and Drinks    
+    -Travel
+    -Entretainment
